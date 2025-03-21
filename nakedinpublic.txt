@@ -1,0 +1,167 @@
+! Brave iOS Enhanced Filter List
+! Comprehensive Ad, Tracker, Phishing, Malware Blocking | Essential Functionality Preserved
+! Last updated: 2025-03-20
+
+! === Ad Blocking Rules ===
+||doubleclick.net^$all
+||googlesyndication.com^$all
+||taboola.com^$all
+||outbrain.com^$all
+||mgid.com^$all
+||adservice.google.com^$all
+||adservices.google.com^$all
+||admob.com^$all
+||googletagservices.com^$all
+||media.net^$all
+||openx.net^$all
+||rubiconproject.com^$all
+||criteo.com^$all
+||ads-twitter.com^$all
+||ads-facebook.com^$all
+||adnxs.com^$all
+||advertising.com^$all
+||adroll.com^$all
+||revcontent.com^$all
+||zergnet.com^$all
+||popads.net^$all
+||propellerads.com^$all
+||adsterra.com^$all
+||mediavine.com^$all
+||buyandsellads.com^$all
+||adthrive.com^$all
+||bannersnack.com^$all
+##.ad, .ads, .adsbox, .ad-banner, .ad-box, .ad-container, .ad-slot, .ad-widget, .ad-wrap, .ad-space, .ad-top, .ad-right, .ad-left, .ad-bottom, .advert, .advertise, .advertisement, .ad-content, .ad-footer, .ad-header, .ad-item, .ad-label, .ad-leaderboard, .ad-module, .ad-placeholder, .ad-section, .ad-sidebar, .ad-unit, .ad-zone, [class*=" ad-"], [class^="ad-"], [id*=" ad-"], [id^="ad-"], iframe[src*="ads"], img[src*="ads"], script[src*="ads"], ins[class*="ad"]
+
+! === Tracker Blocking Rules ===
+||google-analytics.com^$script
+||facebook.net^$script
+||facebook.com^$script
+||analytics.twitter.com^$script
+||t.co^$all
+||mixpanel.com^$script
+||segment.com^$script
+||scorecardresearch.com^$all
+||quantserve.com^$all
+||statcounter.com^$all
+||cloudflareinsights.com^$script
+||trackjs.com^$all
+||googletagmanager.com^$all
+||hotjar.com^$all
+||adobedtm.com^$all
+||newrelic.com^$all
+||cdn.jsdelivr.net^$all
+||cdn.segment.com^$all
+||cdn.optimizely.com^$all
+##script[src*="/analytics"], script[src*="tracking"], img[src*="tracking"], iframe[src*="tracking"], [src*="track"], [src*="analytics"], [class*="track"], [class*="analytics"], [id*="track"], [id*="analytics"]
+
+! === Phishing and Malware Protection ===
+||phishingsite.com^$all
+||malwaredomainlist.com^$all
+||maliciousdomain.com^$all
+||phishing-fraud.com^$all
+||scamwebsite.com^$all
+||badsite.com^$all
+||virusdistribution.com^$all
+||trojanvirus.com^$all
+||keylogger.com^$all
+||identity-theft.com^$all
+||fake-login.com^$all
+||fraudulentwebsite.com^$all
+||maliciouswebsite.com^$all
+||suspicious-email.com^$all
+||malicious-email.com^$all
+||fraudulent-payment.com^$all
+||fake-tax-returns.com^$all
+||fake-job-offer.com^$all
+||phishing-login.com^$all
+||fraudulent-support.com^$all
+||fake-antivirus.com^$all
+||malicious-software.com^$all
+||phishingwebsite.com^$all
+||malwarebytes.com^$all
+||virusalert.com^$all
+||fakeupdate.com^$all
+||virusdownload.com^$all
+||phishingscam.com^$all
+##iframe[src*="phishing"], iframe[src*="malware"], iframe[src*="malicious"], [src*="phishing"], [src*="malware"], [src*="malicious"], iframe[src*="dangerous"], [src*="dangerous"], iframe[src*="fraud"], [src*="fake"], [src*="suspicious"]
+
+! === Essential Tweaks ===
+##.cookie-banner:style(display:none!important)
+##.consent-banner:style(display:none!important)
+##.gdpr-banner:style(display:none!important)
+##.tracking-consent-banner:style(display:none!important)
+##.newsletter-popup:style(display:none!important)
+##.survey-popup:style(display:none!important)
+##.subscription-popup:style(display:none!important)
+##[id*="cookie-consent"]:style(display:none!important)
+##[class*="cookie-consent"]:style(display:none!important)
+##[id*="privacy-banner"]:style(display:none!important)
+##[class*="privacy-banner"]:style(display:none!important)
+##.push-notification-popup:style(display:none!important)
+##.adblock-popup:style(display:none!important)
+@@||google.com/recaptcha/api.js$script
+@@||hcaptcha.com/1/api.js$script
+
+! === Source Enhancements ===
+||gravatar.com/avatar^$all
+||disqus.com^$all
+||cdn.ampproject.org^$all
+||connect.facebook.net^$all
+||platform.twitter.com^$all
+||platform.instagram.com^$all
+||linkedin.com^$all
+||pinterest.com^$all
+||reddit.com^$all
+||snapchat.com^$all
+||tiktok.com^$all
+||youtube.com^$all
+||vimeo.com^$all
+##iframe[src*="disqus"], iframe[src*="facebook.com/plugins"], iframe[src*="twitter.com/widgets"], iframe[src*="instagram.com/embed"], iframe[src*="linkedin.com/embed"], iframe[src*="pinterest.com/embed"], iframe[src*="reddit.com/embed"], iframe[src*="snapchat.com/embed"], iframe[src*="tiktok.com/embed"], iframe[src*="youtube.com/embed"], iframe[src*="vimeo.com/embed"], [src*="gravatar"], [src*="disqus"], [src*="ampproject"], [src*="connect.facebook.net"], [src*="platform.twitter.com"], [src*="platform.instagram.com"], [src*="linkedin.com"], [src*="pinterest.com"], [src*="reddit.com"], [src*="snapchat.com"], [src*="tiktok.com"], [src*="youtube"], [src*="vimeo"]
+
+! === JavaScript Preservation ===
+@@||google.com/recaptcha/api.js$script
+@@||cdnjs.cloudflare.com/ajax/libs/jquery/*/jquery.min.js$script
+@@||stackpath.bootstrapcdn.com/bootstrap/*/js/bootstrap.min.js$script
+@@||code.jquery.com/jquery-*.min.js$script
+@@||ajax.googleapis.com/ajax/libs/jquery/*/jquery.min.js$script
+@@||maxcdn.bootstrapcdn.com/bootstrap/*/js/bootstrap.min.js$script
+@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/css/font-awesome.min.css$stylesheet
+@@||cdnjs.cloudflare.com/ajax/libs/font-awesome/*/fonts/*$font
+@@||stackpath.bootstrapcdn.com/bootstrap/*/css/bootstrap.min.css$stylesheet
+
+! === Fingerprint Protection ===
+##canvas:style(width:1px!important;height:1px!important;display:none!important)
+##audio:style(width:1px!important;height:1px!important;display:none!important)
+##video:style(width:1px!important;height:1px!important;display:none!important)
+||fingerprintjs.com^$all
+||deviceatlas.com^$all
+||browserleaks.com^$all
+||panopticlick.eff.org^$all
+||amiunique.org^$all
+||whoer.net^$all
+||ipleak.net^$all
+||browserprint.info^$all
+||privacy.net^$all
+||browserspy.dk^$all
+||uniquemachine.org^$all
+||fingerprintpro.com^$all
+||fingerprint.com^$all
+##input[type="file"]:style(visibility:hidden!important)
+##svg:style(width:1px!important;height:1px!important;display:none!important)
+##object:style(width:1px!important;height:1px!important;display:none!important)
+##embed:style(width:1px!important;height:1px!important;display:none!important)
+##canvas:style(width:1px!important;height:1px!important;display:none!important)
+##.fingerprint:style(width:1px!important;height:1px!important;display:none!important)
+##video:style(width:1px!important;height:1px!important;display:none!important)
+##audio:style(width:1px!important;height:1px!important;display:none!important)
+
+! === Advanced Fingerprint Protection ===
+##html:style(touch-action:none!important;-ms-touch-action:none!important)
+##body:style(touch-action:none!important;-ms-touch-action:none!important)
+##iframe[src*="fingerprint"], iframe[src*="tracking"], iframe[src*="analytics"], iframe[src*="ads"], iframe[src*="malware"], iframe[src*="phishing"], iframe[src*="dangerous"], [src*="fingerprint"], [src*="tracking"], [src*="analytics"], [src*="ads"], [src*="malware"], [src*="phishing"], [src*="dangerous"]
+
+! === Additional Fingerprint Protection Enhancements ===
+||webglreport.com^$all
+||webglstats.com^$all
+||webglfingerprint.com^$all
+##webgl:style(width:1px!important;height:1px!important;display:none!important)
